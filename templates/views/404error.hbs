@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>header}}
+  </head>
+  <body>
+    <!-- <h1>Welcome to static page</h1> -->
+    <!-- <button class="btn btn-danger">hey</button> -->
+    {{>navbar}}
+
+    <!-- Main header -->
+    <div class="container-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <!-- left side -->
+            <div class="col-md-6 col-12 main_header_right align-items-center">
+              <figure>
+                <img src="images/error.jpg" alt="" class="img-fluid" title="Error">
+              </figure> 
+              </div>
+            <!-- right side -->
+            <div class="col-md-6 col-12 main_header_left">
+              <p>Error 404</p>
+              <h1> <span class="text_clr">{{errMsg}}</span> </h1>
+              <a href="/"><button>Go Back</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{>footer}}
+  </body>
+</html>
